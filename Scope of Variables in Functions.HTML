@@ -1,0 +1,28 @@
+<!--In this activity, learn what local variables are and how it can be accessed.-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scope of Variables in Functions</title>
+    </head>
+    <body>
+        <h1 id="scope">Scope of Variables in Functions</h1>
+        <p>This activity demonstrates the concept of local variables and their scope within functions.</p>
+        <button onclick="showLocalVariable()">Click to Show Local Variable</button>
+       <p class="multiply" id="result"></p>
+       <p id="localVariable"></p>
+       <p id="globalVariable"></p>
+        <script>
+            // Global variable
+            let globalVar = "I am a global variable";
+
+            function showLocalVariable() {
+                // Local variable
+                let localVar = "I am a local variable";
+                document.getElementById("localVariable").innerHTML = localVar;
+                document.getElementById("globalVariable").innerHTML = globalVar;
+            }
+        </script>
+    </body>
+</html>
